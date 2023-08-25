@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./styles/logo 1.png";
@@ -15,12 +15,55 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  useEffect(() => {
+    let isActive = false;
+    function toggle() {
+      if (isActive) {
+        //disable active
+        document.querySelector(".hamburger").className = "hamburger";
+        document.querySelector(".shadow").className = "shadow";
+        document.querySelector(".mobile-nav").className = "mobile-nav";
+        isActive = false;
+      } else {
+        //activate
+        document.querySelector(".hamburger").className = "hamburger active";
+        document.querySelector(".shadow").className = "shadow active";
+        document.querySelector(".mobile-nav").className = "mobile-nav active";
+        isActive = true;
+      }
+    }
+  }, []);
   return (
     <header>
       <a href="/" class="logo">
         <img src={logo} alt="" style={{ height: "80px", paddingTop: "30px" }} />
       </a>
       <nav class="center-nav">
+        <a href="" target="_blank">
+          About Us
+        </a>
+        <a href="https://www.isro.gov.in/GSLV_CON.html" target="_blank">
+          Services
+        </a>
+        <a href="https://www.isro.gov.in/GSLVmk3_CON.html" target="_blank">
+          Mission
+        </a>
+        <a href="https://www.isro.gov.in/Gaganyaan.html" target="_blank">
+          Vision
+        </a>
+      </nav>
+      <nav class="right-nav">
+        <a href="https://www.redwolf.in/isro-merchandise-india" target="_blank">
+          Shop
+        </a>
+      </nav>
+      <div class="shadow"></div>
+      {/* <button class="hamburger" onclick="toggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> */}
+      <nav class="mobile-nav">
         <a href="https://www.isro.gov.in/PSLV_CON.html" target="_blank">
           PSLV
         </a>
@@ -42,8 +85,6 @@ export default function Example() {
         <a href="https://www.isro.gov.in/ScramjetEngine.html" target="_blank">
           Scramjet Engine-TD
         </a>
-      </nav>
-      <nav class="right-nav">
         <a href="https://www.redwolf.in/isro-merchandise-india" target="_blank">
           Shop
         </a>
