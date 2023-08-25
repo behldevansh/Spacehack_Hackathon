@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 const socialMediaIcons = [
   [
@@ -84,7 +85,35 @@ const FooterLink = ({ text, link }) => {
     </a>
   );
 };
-export default function Footer() {
+// export default function Footer() {
+//   return (
+//     <div class="bg-[#1f2937] pt-4 sm:pt-10 lg:pt-12">
+//       <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+//         <div class="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
+//           <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
+//             {footerData.map(([text, link]) => (
+//               <FooterLink text={text} link={link} />
+//             ))}
+//           </nav>
+//           <div class="flex gap-4">
+//             {socialMediaIcons.map(([svg, link]) => (
+//               <SocialMediaIcon svg={svg} link={link} />
+//             ))}
+//           </div>
+//         </div>
+
+//         <div class="py-8 text-center text-sm text-gray-400">
+//           © 2023 - Sattelix. All rights reserved.
+//         </div>
+//         <div class="py-8 text-center text-sm text-gray-400">
+//           Created by team Meteorminds-SpaceHack.
+//         </div>
+//       </footer>
+//     </div>
+//   );
+// }
+
+const Footer = () => {
   return (
     <div class="bg-[#1f2937] pt-4 sm:pt-10 lg:pt-12">
       <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -111,3 +140,4 @@ export default function Footer() {
     </div>
   );
 }
+export default Footer;
