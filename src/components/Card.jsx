@@ -283,7 +283,7 @@ export default function Card() {
             Space Advertising
             </div>
             <p className="mx-auto mb-8 px-8 text-center text-gray-500">
-              Maximum performace for organisations
+            Responsible space exploration and environmental stewardship is essential to ensure a sustainable and positive future for both space and advertising industries.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
@@ -308,7 +308,7 @@ export default function Card() {
                     className="text-gray-500"
                   />
                 </svg>
-                <span className="text-gray-600">Unlimited file storage</span>
+                <span className="text-gray-600">High-powered lasers </span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -333,7 +333,7 @@ export default function Card() {
                   />
                 </svg>
                 <span className="text-gray-600">
-                  Unlimited bandwidth per month
+                Global Visibility
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -358,10 +358,10 @@ export default function Card() {
                     className="text-gray-500"
                   />
                 </svg>
-                <span className="text-gray-600">1.000.000 tasks per month</span>
+                <span className="text-gray-600">Advancements in Technology</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 shrink-0"
                   fill="none"
@@ -381,11 +381,11 @@ export default function Card() {
                     fill="currentColor"
                     className="text-gray-500"
                   />
-                </svg>
-                <span className="text-gray-600">Email and phone support</span>
+                </svg> */}
+                {/* <span className="text-gray-600">Email and phone support</span> */}
               </div>
               <div className="flex items-center gap-2">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 shrink-0"
                   fill="none"
@@ -405,18 +405,18 @@ export default function Card() {
                     fill="currentColor"
                     className="text-gray-500"
                   />
-                </svg>
-                <span className="text-gray-600">Unlimited Webhooks</span>
+                </svg> */}
+                {/* <span className="text-gray-600">Unlimited Webhooks</span> */}
               </div>
             </div>
           </div>
           <div className="mt-auto">
-            <a
+            {/* <a
               href="#"
               className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
             >
               $49
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
