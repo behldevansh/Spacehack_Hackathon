@@ -104,6 +104,9 @@ export default function Footer() {
         <div class="py-8 text-center text-sm text-gray-400">
           © 2023 - Sattelix. All rights reserved.
         </div>
+        <div class="py-8 text-center text-sm text-gray-400">
+          Created by team Meteorminds-SpaceHack.
+        </div>
       </footer>
     </div>
   );
