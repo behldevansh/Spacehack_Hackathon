@@ -5,7 +5,7 @@ export default function Card() {
         <div className="bg-white py-6 sm:py-8 lg:py-12">
   <div className="mx-auto max-w-screen-xl px-4 md:px-8">
     <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
-      Pricing
+      Information
     </h2>
     <div className="mb-6 grid gap-6 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 lg:gap-8">
       <div className="flex flex-col overflow-hidden rounded-lg border sm:mt-8">
@@ -13,10 +13,11 @@ export default function Card() {
         <div className="flex flex-1 flex-col p-6 pt-8">
           <div className="mb-12">
             <div className="mb-2 text-center text-2xl font-bold text-gray-800">
-              Free Trial
+            Our Mission
             </div>
             <p className="mb-8 px-8 text-center text-gray-500">
-              For individuals and organizations who want to try our system
+            We're committed to making the universe's boundless beauty and complexity come alive in the digital realm.
+
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">

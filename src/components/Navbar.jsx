@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "./styles/ISRO_Logo.png";
+import logo from "./styles/logo 1.png";
 
 const navigation = [
   { name: "Our Services", href: "#", current: false },
