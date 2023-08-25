@@ -28,7 +28,7 @@ select {
   font: inherit;
 }
 
-/* header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,10 +176,12 @@ section div.content a:hover span{
 }
 .right-nav a {
   display: none;
-} */
+}
 
 
-html, body{
+/* COMPLETE CSS IS HERE  */
+
+/* html, body{
   margin: 0;
   padding: 0;
 }
@@ -461,4 +463,4 @@ footer nav a{
 }
 footer nav a:hover{
   color: #aaa;
-}
+} */
