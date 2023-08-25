@@ -1,29 +1,48 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import LandingSection from "./components/LandingSection";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
 import OurMission from "./components/OurMission";
 import OurVission from "./components/OurVission";
+import About from "./components/About";
 
 export default function App() {
-  return (
-    // <div>
-    //   <Navbar />
-    //   <LandingSection />
-    //   <OurMission />
-    //   <OurVission />
-    //   <Card />
-    //   <Footer />
-    // </div>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-        <Route path="/" element={<Navbar />}>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (section) {
+          if (section.isIntersecting) {
+            section.target.className = "active";
+          }
+        });
+      },
+      { threshold: 0.8 }
+    );
 
-      <Routes/>
-    <BrowserRouter/>
+    document.querySelectorAll("section").forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <LandingSection />
+              <Card />
+            </>
+          }
+        />
+        <Route path="/mission" element={<OurMission />} />
+        <Route path="/vision" element={<OurVission />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
