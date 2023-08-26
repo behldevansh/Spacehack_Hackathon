@@ -38,16 +38,14 @@ const Navbar = () => {
         <img src={logo} alt="" style={{ height: "80px", paddingTop: "30px" }} />
       </a>
       <nav class="center-nav">
-        <Link to="/about">About Us</Link>
         <a href="/#services">Services</a>
         <Link to="/mission">Mission</Link>
         <Link to="/vision">Vision</Link>
-      </nav>
-      <nav class="right-nav">
-        <a href="https://www.redwolf.in/isro-merchandise-india" target="_blank">
-          Shop
+        <a href="https://satellix-upload.netlify.app/" target="_blank">
+          Space Storage
         </a>
       </nav>
+
       <div class="shadow"></div>
       {/* <button class="hamburger" onclick="toggle()">
         <span></span>
@@ -55,30 +53,10 @@ const Navbar = () => {
         <span></span>
       </button> */}
       <nav class="mobile-nav">
-        <a href="https://www.isro.gov.in/PSLV_CON.html" target="_blank">
-          PSLV
-        </a>
-        <a href="https://www.isro.gov.in/GSLV_CON.html" target="_blank">
-          GSLV
-        </a>
-        <a href="https://www.isro.gov.in/GSLVmk3_CON.html" target="_blank">
-          LVM-3
-        </a>
-        <a href="https://www.isro.gov.in/Gaganyaan.html" target="_blank">
-          HRLV
-        </a>
-        <a href="https://www.isro.gov.in/RLVTD.html" target="_blank">
-          RLV-TD
-        </a>
-        <a href="https://www.isro.gov.in/SLV.html" target="_blank">
-          SLV
-        </a>
-        <a href="https://www.isro.gov.in/ScramjetEngine.html" target="_blank">
-          Scramjet Engine-TD
-        </a>
-        <a href="https://www.redwolf.in/isro-merchandise-india" target="_blank">
-          Shop
-        </a>
+        <a href="/#services">Services</a>
+        <Link to="/mission">Mission</Link>
+        <Link to="/vision">Vision</Link>
+        <a href="/#services">Try Our Data Storage Solutions</a>
       </nav>
     </header>
   );

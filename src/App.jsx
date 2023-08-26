@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Card from "./components/Card";
 import OurMission from "./components/OurMission";
 import OurVission from "./components/OurVission";
-import About from "./components/About";
 
 export default function App() {
   useEffect(() => {
@@ -40,7 +39,6 @@ export default function App() {
         />
         <Route path="/mission" element={<OurMission />} />
         <Route path="/vision" element={<OurVission />} />
-        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </div>
